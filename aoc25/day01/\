@@ -1,0 +1,90 @@
+use std::io::{BufRead, BufReader};
+use std::thread::current;
+use std::{fs::File, path::Path};
+fn main() {
+    let path = Path::new("input");
+    let file = match File::open(path) {
+        Err(e) => panic!("couldnt read file: {}", e),
+        Ok(f) => f,
+    };
+    let buf = BufReader::new(file);
+
+    let mut current_pos = 50;
+    let mut count = 0;
+
+    for line in buf.lines() {
+        let line = line.unwrap();
+        print!("The dial was rotated {line} ");
+        let mut direction = line;
+        let amount = direction.split_off(1).parse::<i32>().unwrap();
+
+        if direction == "L" {
+            current_pos -= amount;
+        } else {
+            current_pos += amount;
+        }
+
+        if current_pos < 0 {
+            count += current_pos.abs() / 100 + 1;
+            while current_pos < 0 {
+                current_pos = 100 - (current_pos.abs() % 100);
+            }
+            println!(
+                "to the value of {}, hitting 0 {} times",
+                current_pos,
+                current_pos.abs() / 100 + 1
+            );
+            continue;
+        }
+
+        if current_pos > 99 {
+            count += current_pos / 100;
+            while current_pos > 99 {
+                current_pos %= 100;
+            }
+            println!(
+                "to the value of {}, hitting 0 {} times",
+                current_pos,
+                current_pos / 100
+            );
+            continue;
+        }
+
+        if current_pos == 0 {
+            count += 1;
+        }
+
+        println!("to the value of {}", current_pos);
+    }
+
+    println!("{}", count);
+}
+
+fn add(starting_pos: i32, amount: i32) -> i32 {
+    let mut tmp = starting_pos + amount;
+    while tmp > 99 {
+        tmp %= 100;
+    }
+
+    tmp
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn add_without_overflow() {
+        assert_eq!(30, add(10, 20));
+        assert_eq!(50, add(4, 46));
+        assert_eq!(70, add(50, 20));
+        assert_eq!(12, add(10, 2));
+    }
+
+    #[test]
+    fn add_overflows() {
+        assert_eq!(12, add(80, 32));
+        assert_eq!(3, add(50, 253));
+        assert_eq!(0, add(99, 1));
+    }
+}

@@ -1,0 +1,216 @@
+{
+  "main": {
+    "id": "dce5b89da4e41e0c",
+    "type": "split",
+    "children": [
+      {
+        "id": "2a1dfe90d3184e56",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cb9bc2c267d5a5c4",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ade56b127134e92a",
+    "type": "split",
+    "children": [
+      {
+        "id": "09fad213c81cdcc8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9e291dd0cfe98c9b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "f63cbfcd7c2c108e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "32e2ba4a6a8a80e0",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "e320b70e82bc53f2",
+    "type": "split",
+    "children": [
+      {
+        "id": "d8df2b546035fc00",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ebff0f74e24e9207",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "2. Guessing Game (practice chapter).md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 2. Guessing Game (practice chapter)"
+            }
+          },
+          {
+            "id": "850a522fc9f50055",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "2. Guessing Game (practice chapter).md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 2. Guessing Game (practice chapter)"
+            }
+          },
+          {
+            "id": "85c6fed36abef3be",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "d46dca55313a4868",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "6b7201191e01a622",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "2. Guessing Game (practice chapter).md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 2. Guessing Game (practice chapter)"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "cb9bc2c267d5a5c4",
+  "lastOpenFiles": [
+    "2 - Rustlings/1. Intro stuff.md",
+    "1 - Rust book/21. Building a multithreaded web server.md",
+    "1 - Rust book/22. Apendix A - Keywords.md",
+    "1 - Rust book/24. Appendix C - Derivable Traits.md",
+    "1 - Rust book/25. Appendix D - Development Tools.md",
+    "1 - Rust book/2. Guessing Game.md",
+    "1 - Rust book/15. Smart Pointers.md",
+    "2 - Rustlings",
+    "1 - Rust book/16. Fearless concurrency.md",
+    "1 - Rust book/10. Generics, Traits, Lifetimes.md",
+    "1 - Rust book/5. Struct.md",
+    "1 - Rust book/23. Appendix B - Operators and Symbols.md",
+    "1 - Rust book/19. Patterns and matching.md",
+    "1 - Rust book/18. OOP Features.md",
+    "1 - Rust book/17. Fundamentals of Async.md",
+    "1 - Rust book/20. Advanced Features.md",
+    "1 - Rust book/12. IO CLI project.md",
+    "1 - Rust book/14. Cargo and crates.io.md",
+    "1 - Rust book/13. Functional Language Features.md",
+    "1 - Rust book/11. Writing Automated Tests.md",
+    "1 - Rust book/8. Common collections.md",
+    "1 - Rust book/9. Error handling.md",
+    "0 - Miscellaneous/Screenshot from 2026-01-04 20-21-12.png",
+    "1 - Rust book",
+    "0 - Miscellaneous",
+    "0 - Miscellaneous/Screenshot from 2026-01-02 16-05-26.png",
+    "1 - Rust book/6. Enums & pattern matching.md",
+    "1 - Rust book/3. Common concepts.md",
+    "1 - Rust book/7. Packages, crates, modules.md",
+    "1 - Rust book/1. Introduction.md",
+    "introduction.md"
+  ]
+}
