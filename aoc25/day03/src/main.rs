@@ -53,20 +53,15 @@ impl Runner {
         Ok(total_sum)
     }
 
-    fn part2(&self) -> Result<u32, Box<dyn std::error::Error>> {
+    fn part2(&self) -> Result<u64, Box<dyn std::error::Error>> {
         let text = unsafe { Mmap::map(&self.file)? };
         text.advise(memmap2::Advice::Sequential)?;
         // get all non empty lines
         let text = text.split(|c| *c == b'\n').filter(|el| !el.is_empty());
-        let mut total_sum = 0;
+        let mut total_sum = 0u64;
 
         for line in text {
-            // let mut battery_bank = Vec::new();
-            // for voltage in line {
-            //     let voltage = *voltage as i8;
-            //     battery_bank.push(voltage);
-            // }
-            let mut current_total = 0;
+            let mut current_total = 0u64;
 
             let voltages: Vec<u32> = str::from_utf8(line)
                 .expect("The file is well known")
@@ -89,7 +84,7 @@ impl Runner {
                     panic!("shouldnt be possible");
                 };
                 start += pos + 1;
-                current_total = (current_total * 10) + next_digit;
+                current_total = (current_total * 10) + next_digit as u64;
             }
             total_sum += current_total;
         }
