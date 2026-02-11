@@ -3,3 +3,49 @@
 # Use borrowed values for arguments
 -> Deref coercion will be used for the indirection when possible, making the code more flexible
 -> For example, can use `&str` instead of `&String` or `&[T]` instead of `&Vec<T>`
+
+*Always use `String` in structs, and for functions, use `&str` for parameters. If the return type of your function is derived from an argument and isn’t mutated by the body, return `&str`. If you run into any trouble here, return `String` instead.*
+
+# `format!()` instead of `push()` or `push_str()`
+-> Even though you can mutate mutable `String` with `push or push_str` or `+`,  it is much more readable to use `format!()`
+-> More than readability, `format!()` is much more easy to use when there is a mix of literal and no-literal strings
+
+-> Disadvantage - it is usually much more efficient to have `push` operations rather than a format. And if the `String` memory is pre-allocated it is even much better
+
+# Constructors
+-> Rust doesn't have the constructors like other languages. The convention is to have an associated function called `new` to create an object of a certain data structures
+
+# Default
+-> It is assumed that any type should implement a `Default`. If all the data in the `struct` implement `Default`, you can just use `Derive`
+-> Adding to that,  users usually expect an empty constructor, that most of the time you want to behave like the Default
+
+# Eagerly implementing common traits for the types
+-> Rust does not allow orphan implementations, meaning that an `impl` has to be either in the file in with the `Trait` is defined or in the file in which the `type` is defined. In cases where you import a trait from a crate and a type from another crate, you can not extend that type's implementations without the `newtype` pattern, which makes thing bit annoying
+-> Given this constraint, it is convention for a lib to implement all the common traits that one would expect
+
+# PartialEq implementation
+-> Eq is just a marker to symbolize the complete mathematical equality
+
+# Collections are smart pointers
+-> The `Deref` trait can be used to treat collections like smart pointers, offering owning and borrowing views of the data
+-> This way most of the methods can be implemented on the borrowing view and they are implicitely avaiable for the owned data
+-> Give you clients the choice between working with owned data and working with borrowed data
+-> Disadvantage: code with generics gets bit more complex (`Borrow` and `AsRef` traits)
+
+# Finalizing functions with destructors
+-> Because Rust does not have a formal `finally` keyword to call for the end of a function, no matter the flow it goes on, we can create a `struct` that implements a `Drop` and a custom `drop` method that will execute the code at the end of our desired function (because it goes out of scope and `drop` will be called automatically)
+
+# Mem to change between variants of an Enum
+-> If you have an enum with some variants that might share some piece of data, lets say every variant has `name: String`, we can use `mem::take(name)` when creating the other variant after we matched and we know that it is of a variant that holds that value
+-> This allows us to replace a variant with another in place, instead of doing it in more steps
+
+# Foreign Function Interface (FFI) idioms
+## Error handling for FFIs
+-> Flat Enums should be converted to integers and returned as codes.
+-> Structured Enums should be converted to an integer code with a string error message for detail.
+-> Custom Error Types should become “transparent”, with a C representation.
+
+# Using strings when passing and accepting parameters to FFIs
+-> Keep data borrowed
+-> Keep code simple and as little unsafe as possible
+
