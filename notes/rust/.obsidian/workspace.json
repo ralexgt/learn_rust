@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4 - Std/Untitled.md",
+                "file": "5 - Design patterns book/Idioms.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "Idioms"
             }
           }
         ]
@@ -185,7 +185,9 @@
   },
   "active": "cb9bc2c267d5a5c4",
   "lastOpenFiles": [
-    "4 - Std/Untitled.md",
+    "4 - Std/Notes on std docs.md",
+    "5 - Design patterns book/Idioms.md",
+    "5 - Design patterns book",
     "4 - Std",
     "3 - Rust by Example",
     "2 - Rustlings/1. Intro stuff.md",
@@ -216,7 +218,6 @@
     "0 - Miscellaneous/Screenshot from 2026-01-02 16-05-26.png",
     "1 - Rust book/6. Enums & pattern matching.md",
     "1 - Rust book/3. Common concepts.md",
-    "1 - Rust book/7. Packages, crates, modules.md",
-    "1 - Rust book/1. Introduction.md"
+    "1 - Rust book/7. Packages, crates, modules.md"
   ]
 }
