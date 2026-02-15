@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "5 - Design patterns book/3. Functional usage of Rust.md",
+                "file": "6 - Zero to production Book/Introductions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3. Functional usage of Rust"
+              "title": "Introductions"
             }
           }
         ]
@@ -185,8 +185,10 @@
   },
   "active": "cb9bc2c267d5a5c4",
   "lastOpenFiles": [
-    "5 - Design patterns book/2. Design Patterns.md",
     "5 - Design patterns book/3. Functional usage of Rust.md",
+    "6 - Zero to production Book/Introductions.md",
+    "6 - Zero to production Book",
+    "5 - Design patterns book/2. Design Patterns.md",
     "5 - Design patterns book/1. Idioms.md",
     "4 - Std/Notes on std docs.md",
     "5 - Design patterns book",
@@ -217,7 +219,6 @@
     "0 - Miscellaneous/Screenshot from 2026-01-04 20-21-12.png",
     "1 - Rust book",
     "0 - Miscellaneous",
-    "0 - Miscellaneous/Screenshot from 2026-01-02 16-05-26.png",
-    "1 - Rust book/6. Enums & pattern matching.md"
+    "0 - Miscellaneous/Screenshot from 2026-01-02 16-05-26.png"
   ]
 }
