@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "5 - Design patterns book/Idioms.md",
+                "file": "5 - Design patterns book/3. Functional usage of Rust.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Idioms"
+              "title": "3. Functional usage of Rust"
             }
           }
         ]
@@ -185,8 +185,10 @@
   },
   "active": "cb9bc2c267d5a5c4",
   "lastOpenFiles": [
+    "5 - Design patterns book/2. Design Patterns.md",
+    "5 - Design patterns book/3. Functional usage of Rust.md",
+    "5 - Design patterns book/1. Idioms.md",
     "4 - Std/Notes on std docs.md",
-    "5 - Design patterns book/Idioms.md",
     "5 - Design patterns book",
     "4 - Std",
     "3 - Rust by Example",
@@ -216,8 +218,6 @@
     "1 - Rust book",
     "0 - Miscellaneous",
     "0 - Miscellaneous/Screenshot from 2026-01-02 16-05-26.png",
-    "1 - Rust book/6. Enums & pattern matching.md",
-    "1 - Rust book/3. Common concepts.md",
-    "1 - Rust book/7. Packages, crates, modules.md"
+    "1 - Rust book/6. Enums & pattern matching.md"
   ]
 }
