@@ -6,3 +6,31 @@
 # Getting started
 -> Tooling
 	-> Rust toolchain `rustup`: rustc, cargo
+	-> Rust-analyzer or IntelliJ Rust for IDE code navigation
+	-> cargo-watch
+	-> cargo-tarpaulin
+	-> clippy
+	-> rustfmt
+	-> cargo-audit
+
+-> **Inner Development Loop**:
+	1. Make changes
+	2. Compile the application
+	3. Run tests
+	4. Run the application
+-> To improve compilation time:
+	-> Use faster linker: LLD
+	-> cargo-watch: cargo watch -x check -x test -x run
+
+# Continuous Integration (CI) Pipeline
+1. Tests
+-> `cargo test`
+2. Code coverage
+-> `cargo-tarpaulin` will give you some code coverage insights
+3. Linting
+-> Static analysis a *linter* does to try and spot unidiomatic code, overly-complex constructs and common mistakes/inefficiencies
+-> `rustup component add clippy` and `cargo clippy` to run Rust's linter
+4. Formatting
+-> `rustfmt` for formatting
+5. Security vulnerabilities
+-> `cargo install cargo-audit` and `cargo audit`
