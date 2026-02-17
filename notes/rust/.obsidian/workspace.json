@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "6 - Zero to production Book/Introductions.md",
+                "file": "6 - Zero to production Book/5. Signing up a new subscriber.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Introductions"
+              "title": "5. Signing up a new subscriber"
             }
           }
         ]
@@ -185,8 +185,13 @@
   },
   "active": "cb9bc2c267d5a5c4",
   "lastOpenFiles": [
+    "6 - Zero to production Book/4. Integration tests.md",
+    "6 - Zero to production Book/0. NECESSARY TODOS.md",
+    "6 - Zero to production Book/5. Signing up a new subscriber.md",
+    "6 - Zero to production Book/3. Actix hello world example.md",
+    "6 - Zero to production Book/2. Building a newsletter - High level.md",
+    "6 - Zero to production Book/1. Introductions.md",
     "5 - Design patterns book/3. Functional usage of Rust.md",
-    "6 - Zero to production Book/Introductions.md",
     "6 - Zero to production Book",
     "5 - Design patterns book/2. Design Patterns.md",
     "5 - Design patterns book/1. Idioms.md",
@@ -211,11 +216,6 @@
     "1 - Rust book/17. Fundamentals of Async.md",
     "1 - Rust book/20. Advanced Features.md",
     "1 - Rust book/12. IO CLI project.md",
-    "1 - Rust book/14. Cargo and crates.io.md",
-    "1 - Rust book/13. Functional Language Features.md",
-    "1 - Rust book/11. Writing Automated Tests.md",
-    "1 - Rust book/8. Common collections.md",
-    "1 - Rust book/9. Error handling.md",
     "0 - Miscellaneous/Screenshot from 2026-01-04 20-21-12.png",
     "1 - Rust book",
     "0 - Miscellaneous",
