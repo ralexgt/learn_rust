@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "6 - Zero to production Book/5. Signing up a new subscriber.md",
+                "file": "6 - Zero to production Book/0. NECESSARY TODOS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "5. Signing up a new subscriber"
+              "title": "0. NECESSARY TODOS"
             }
           }
         ]
@@ -185,13 +185,14 @@
   },
   "active": "cb9bc2c267d5a5c4",
   "lastOpenFiles": [
-    "0 - Miscellaneous/Screenshot from 2026-01-02 16-05-26.png",
-    "6 - Zero to production Book/5. Signing up a new subscriber.md",
-    "6 - Zero to production Book/4. Integration tests.md",
+    "6 - Zero to production Book/1. Introductions.md",
+    "6 - Zero to production Book/6. Telemetry.md",
     "6 - Zero to production Book/0. NECESSARY TODOS.md",
+    "6 - Zero to production Book/5. Signing up a new subscriber.md",
+    "0 - Miscellaneous/Screenshot from 2026-01-02 16-05-26.png",
+    "6 - Zero to production Book/4. Integration tests.md",
     "6 - Zero to production Book/3. Actix hello world example.md",
     "6 - Zero to production Book/2. Building a newsletter - High level.md",
-    "6 - Zero to production Book/1. Introductions.md",
     "5 - Design patterns book/3. Functional usage of Rust.md",
     "6 - Zero to production Book",
     "5 - Design patterns book/2. Design Patterns.md",
